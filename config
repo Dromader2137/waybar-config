@@ -3,7 +3,7 @@
     "height": 27, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["mpd"],
     "modules-right": ["network", "cpu", "memory", "battery", "clock", "tray"],
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -22,7 +22,7 @@
 		},
     },
 	"tray": {
-        "spacing": 10
+        "spacing": 0
     },
     "clock": {
         "format": "{:%H:%M %Y-%m-%d}"
@@ -59,7 +59,7 @@
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        "format-wifi": "{essid} ",
+        "format-wifi": "{essid}  ",
         "format-ethernet": "{ipaddr}",
         "format-disconnected": "Disconnected ⚠ ",
     },

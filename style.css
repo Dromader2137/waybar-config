@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-    background-color: #282828;
+    background-color: rgba(40, 40, 40, 1.0);
     color: #ebdbb2;
     transition-property: background-color;
     transition-duration: .5s;
@@ -13,7 +13,7 @@ window#waybar {
 #workspaces button {
     color: #ebdbb2;
 	border-radius: 0px;
-	padding: 0px 2px 0px 3px;
+	padding: 0px 0px 0px 1px;
 }
 
 #workspaces button:hover {
@@ -57,10 +57,15 @@ window#waybar {
 #battery {
 	margin-left: 10px;
     background-color: #282828;
+	border-style: solid;
+	border-bottom-width: 2px;
+	border-color: #258588;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #cc241d;
+    border-color: #cc241d;
+	border-style: solid;
+	border-bottom-width: 2px;
 }
 
 #cpu {
