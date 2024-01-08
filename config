@@ -4,7 +4,7 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["mpd"],
-    "modules-right": ["network", "cpu", "memory", "battery", "clock", "tray"],
+    "modules-right": ["battery", "network", "tray", "clock"],
     "hyprland/workspaces": {
         "disable-scroll": true,
         "warp-on-scroll": false,
@@ -21,8 +21,19 @@
 			"9": [],
 		},
     },
+	"mpd": {
+		"format": "{stateIcon}  {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})  ",
+		"format-disconnected": "Disconnected  ",
+		"format-stopped": "Stopped  ",
+		"interval": 1,
+		"state-icons": {
+			"paused": "",
+        	"playing": ""
+    	},
+        "tooltip": false
+	},
 	"tray": {
-        "spacing": 0
+        "spacing": 5
     },
     "clock": {
         "format": "{:%H:%M %Y-%m-%d}"
@@ -59,9 +70,9 @@
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        "format-wifi": "{essid}  ",
-        "format-ethernet": "{ipaddr}",
-        "format-disconnected": "Disconnected ⚠ ",
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀  Ethernet",
+        "format-disconnected": "  󰈀  Disconnected",
     },
 }
 

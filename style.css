@@ -1,6 +1,7 @@
 * {
     font-family: Mononoki Nerd Font, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
+	font-weight: bold;
 }
 
 window#waybar {
@@ -8,6 +9,9 @@ window#waybar {
     color: #ebdbb2;
     transition-property: background-color;
     transition-duration: .5s;
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: #458588;
 }
 
 #workspaces button {
@@ -17,12 +21,12 @@ window#waybar {
 }
 
 #workspaces button:hover {
-	background: #282828;
+	background-color: #282828;
 	border-width: 0px;
 }
 
 #workspaces button.active {
-    background-color: #258588;
+    background-color: #458588;
 }
 
 #workspaces button.urgent {
@@ -37,61 +41,35 @@ window#waybar {
 #tray,
 
 #window,
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
 
 #clock {
-	margin-left: 10px;
-	border-style: solid;
-	border-bottom-width: 2px;
-	border-color: #258588;
+	margin-left: 20px;
+	margin-right: 6px;
 }
 
 #battery {
-	margin-left: 10px;
-    background-color: #282828;
-	border-style: solid;
-	border-bottom-width: 2px;
-	border-color: #258588;
+	margin-left: 20px;
 }
 
 #battery.critical:not(.charging) {
-    border-color: #cc241d;
-	border-style: solid;
-	border-bottom-width: 2px;
-}
-
-#cpu {
-	margin-left: 10px;
-	border-style: solid;
-	border-bottom-width: 2px;
-	border-color: #258588;
-}
-
-#memory {
-	margin-left: 10px;
-	border-style: solid;
-	border-bottom-width: 2px;
-	border-color: #258588;
+    color: #cc241d;
 }
 
 #network {
-	margin-left: 10px;
-	border-style: solid;
-	border-bottom-width: 2px;
-	border-color: #258588;
+	margin-left: 20px;
 }
 
 #tray {
-	margin-left: 10px;
-	border-style: solid;
-	border-bottom-width: 2px;
-	border-color: #258588;
+    color: #ebdbb2;
+	margin-left: 20px;
+}
+
+#mpd {
 }
